@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Сократика</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="images/favicon/icon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="logo">
+         <span class="logo__img"></span>
+         <h2 class="logo__header">Сократика</h2>
+      </div>
+
+      <main class="content">
+         <div class="content__img-preview"></div>
+
+         <form action="" class="content__form">
+            <h1 class="form__header">01 Заполни форму</h1>
+
+            <section class="form__info">
+               <div class="info__theme">
+                  <button class="info__theme-delete-btn" type="button"></button>
+                  <input class="info__theme-input" type="text" placeholder="Напиши что-то конкретное" name="name">
+               </div>
+
+               <div class="dropdown">
+                  <button class="dropdown__btn" type="button">
+                     <span class="dropdown__btn-value">4</span>
+                     <span class="dropdown__btn-arrow"></span>
+                  </button>
+                  <ul class="dropdown__list">
+                     <li class="dropdown__list-item" data-value="1">1<span class="dropdown__list-img"></span></li>
+                     <li class="dropdown__list-item" data-value="2">2<span class="dropdown__list-img"></span></li>
+                     <li class="dropdown__list-item" data-value="3">3<span class="dropdown__list-img"></span></li>
+                     <li class="dropdown__list-item dropdown__list-item-target" data-value="4">4<span
+                           class="dropdown__list-img" style="display: block;"></span></li>
+                     <li class="dropdown__list-item" data-value="5">5<span class="dropdown__list-img"></span></li>
+                  </ul>
+                  <input class="dropdown__input-hidden" type="text" name="name" value="">
+               </div>
+
+
+
+               <div class="info__tags">
+                  <span>Генетика</span>
+                  <span>Анатомия человека</span>
+                  <span>Вулканы</span>
+                  <span>Зимние виды спорта</span>
+                  <span>Радуга</span>
+                  <span>Индийская культура</span>
+               </div>
+
+               <button class="info__tags-btn" type="button">
+                  <span class="tags-btn__img"></span>
+                  <span>Показать больше вариантов</span>
+               </button>
+
+               <div class="info__purpose">
+                  <textarea class="info__purpose-textarea" type="text"
+                     placeholder="Напиши свою учебную цель"></textarea>
+
+                  <div class="info__warning">
+                     <span class="warning_text">Enter your name</span>
+                     <span class="warning_count">0 / 200</span>
+                  </div>
+               </div>
+
+               <div class="info__buttons">
+                  <button class="back-btn" type="button">Назад</button>
+                  <button class="next-btn" type="submit" disabled>Следующий шаг</button>
+               </div>
+
+            </section>
+         </form>
+      </main>
+   </div>
+
+   <script src="js/script.js"></script>
+
+</body>
+
+</html>
